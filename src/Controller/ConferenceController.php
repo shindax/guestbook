@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ConferenceController extends AbstractController
 {
-    #[Route('/hello/{name}', name: 'homepage')]
+    #[Route('/', name: 'homepage')]
     public function index(string $name=''): Response
     {
         $greet = '';
